@@ -1,5 +1,4 @@
 const { developmentChains, VERIFICATION_BLOCK_CONFIRMATIONS } = require("../helper-hardhat-config")
-
 const { network } = require("hardhat")
 
 module.exports = async ({ getNamedAccounts, deployments }) => {
@@ -26,7 +25,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
         },
     })
 
-    // Be sure to check out the hardhat-deploy examples to use UUPS proxies!
+    // Be sure to check out the hardhat-deploy examples on how to use UUPS proxies!
     // https://github.com/wighawag/template-ethereum-contracts
 
     // Verify the deployment
@@ -34,6 +33,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
         log("Verifying...")
         await verify(box.address, [])
     }
+    
     log("----------------------------------------------------")
 }
 
