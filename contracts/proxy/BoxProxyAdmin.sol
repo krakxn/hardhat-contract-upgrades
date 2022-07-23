@@ -8,6 +8,6 @@ contract BoxProxyAdmin is ProxyAdmin {
     constructor(
         address /* owner */
     ) ProxyAdmin() {
-        // We just need this for our hardhat tooling right now
+        /// We just need this for our Hardhat tooling right now
     }
 }
